@@ -112,7 +112,8 @@ const getStatusColor = (status: string): string => {
     FUTURE: "bg-emerald-500",
     REBOOT_REQUESTED: "bg-stone-500",
   };
-  return colorMap[statusLevel] || "bg-gray-900";
+  //return colorMap[statusLevel] || "bg-gray-900";
+  return colorMap[status.toUpperCase()] || "bg-gray-900";
 };
 
 export const NodeCard = (props: NodeCardProps) => {

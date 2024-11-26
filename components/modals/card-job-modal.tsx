@@ -170,7 +170,7 @@ const NodeCardModal: React.FC<NodeCardModalProps> = ({
                   >
                     <TableCell>{job.job_id}</TableCell>
                     <TableCell>
-                      {job.array && job.array.task_id.set
+                      {job.array && job.array.task_id !== null
                         ? `${job.array.job_id}[${job.array.task_id.number}]`
                         : "N/A"}
                     </TableCell>

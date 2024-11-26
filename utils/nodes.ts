@@ -1,6 +1,5 @@
 export function getStatusDef(status: string): string {
-  const statusLevel = status[1] || status[0];
-  switch (statusLevel) {
+  switch (status.toUpperCase()) {
     case "DRAIN":
     case "NOT_RESPONDING":
     case "DOWN":

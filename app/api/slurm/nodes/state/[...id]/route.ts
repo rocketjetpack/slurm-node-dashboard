@@ -17,6 +17,9 @@ export async function GET(
     }
   );
   const data = await res.json();
+  //if( ! Array.isArray(data.features) ) {
+  //  data.features = data.features.split(',');
+  //}
   return NextResponse.json(data);
 }
 

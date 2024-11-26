@@ -122,6 +122,9 @@ export const sendMessage = async (
             }
 
             const nodeDetails = await response.json();
+            if( ! Array.isArray(nodeDetails.features) ) {
+              nodeDetails.features = nodeDetails.features.split(',');
+            }
             await sleep(1000);
 
             history.done([
