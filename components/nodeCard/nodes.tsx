@@ -97,7 +97,7 @@ const Nodes = () => {
   const uniqueFeatures = useMemo(() => {
     const features = new Set<string>();
     systems.forEach((node) => {
-      if( ! Array.is_array(node.features) { node.features = Array(); }
+      if( ! Array.is_array(node.features) ) { node.features = Array(); }
       (node.features || []).forEach((feature) => features.add(feature));
     });
     return Array.from(features);
