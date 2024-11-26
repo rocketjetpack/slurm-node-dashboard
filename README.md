@@ -7,6 +7,7 @@
 [![Shadcn](https://img.shields.io/badge/Shadcn-components-8B5CF6)](https://ui.shadcn.com/)
 
 > Powerful monitoring for your SLURM-based HPC cluster
+> Forked from https://github.com/thediymaker/slurm-node-dashboard
 
 The HPC Dashboard is a Next.js application designed to provide comprehensive monitoring of SLURM nodes. With a focus on performance and usability, this dashboard offers real-time insights into your HPC resources.
 
@@ -38,9 +39,16 @@ Enable these features by configuring your environment file:
 ## Quick Start
 
 ```bash
-git clone https://github.com/thediymaker/slurm-node-dashboard.git
+# Rocky 9 upstream repo has a npm that is too old for this project to work, start fresh with local
+# nvm and use it to install npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install 22
+# Clone the repo
+git clone https://github.com/rocketjetpack/slurm-node-dashboard
 cd slurm-node-dashboard
 npm install
+# Replace the bundled next with a more modern one (v14)
+nvm i next@14
 # Set up your .env file (see Configuration section)
 npm run dev
 ```
