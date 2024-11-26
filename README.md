@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-latest-38B2AC)](https://tailwindcss.com/)
 [![Shadcn](https://img.shields.io/badge/Shadcn-components-8B5CF6)](https://ui.shadcn.com/)
 
-> Powerful monitoring for your SLURM-based HPC cluster
+> Powerful monitoring for your SLURM-based HPC cluster  
 > Forked from https://github.com/thediymaker/slurm-node-dashboard
 
 The HPC Dashboard is a Next.js application designed to provide comprehensive monitoring of SLURM nodes. With a focus on performance and usability, this dashboard offers real-time insights into your HPC resources.
